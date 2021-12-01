@@ -15,8 +15,7 @@ fun main() {
 
     fun part2(input: List<Long>): Long {
         val inputSums: MutableList<Long> = mutableListOf()
-        val until1 = input.size - 2
-        for (i in 0 until until1) {
+        for (i in 0 until input.size - 2) {
             inputSums.add((input[i] + input[i + 1] + input[i + 2]))
         }
 
