@@ -111,16 +111,16 @@ fun main() {
     }
 
 
-    val testInput = readInput("Day04_test").toMutableList()
+    val testInput = readInput("Day04/Day04_test").toMutableList()
     val testBingoNumbers = setupBingoNumbers(testInput)
 
-    //check(part1(testBingoNumbers, testInput) == 4512L)
-    println(part2(testBingoNumbers, testInput))
+    check(part1(testBingoNumbers, testInput) == 4512L)
+    //println(part2(testBingoNumbers, testInput))
     //check(part2(testBingoNumbers, testInput) == 1924L)
 
-    val input = readInput("Day04").toMutableList()
+    val input = readInput("Day04/Day04").toMutableList()
     val bingoNumbers = setupBingoNumbers(input)
-    //println(part1(bingoNumbers, input))
+    println(part1(bingoNumbers, input))
     //println(part2(bingoNumbers, input))
 
 }

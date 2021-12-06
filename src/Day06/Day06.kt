@@ -35,7 +35,7 @@ fun main() {
 
         return fishes.sum()
     }
-    
+
     val testInput = readInput("Day06/Day06_test")[0].split(",").stream().map { it.toInt() }.toList()
     val testInputPart1 = testInput.map { LanternFish(it) }.toList()
     val testInputPart2 = Array(9) { 0L }
