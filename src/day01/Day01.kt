@@ -23,12 +23,12 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInputPart1 = readInput("Day01/Day01_01_test").map { it.toLong() }
-    val testInputPart2 = readInput("Day01/Day01_02_test").map { it.toLong() }
+    val testInputPart1 = readInput("day01/Day01_01_test").map { it.toLong() }
+    val testInputPart2 = readInput("day01/Day01_02_test").map { it.toLong() }
     check(part1(testInputPart1) == 7L)
     check(part2(testInputPart2) == 5L)
 
-    val input = readInput("Day01/Day01").map { it.toLong() }
+    val input = readInput("day01/Day01").map { it.toLong() }
     println(part1(input))
     println(part2(input))
 }

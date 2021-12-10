@@ -1,4 +1,4 @@
-package Day06.Domain
+package day06.domain
 
 import java.util.*
 

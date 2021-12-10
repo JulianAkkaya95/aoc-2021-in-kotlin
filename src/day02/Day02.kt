@@ -54,12 +54,12 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInputPart1 = readInput("Day02/Day02_01_test")
-    val testInputPart2 = readInput("Day02/Day02_02_test")
+    val testInputPart1 = readInput("day02/Day02_01_test")
+    val testInputPart2 = readInput("day02/Day02_02_test")
     check(part1(testInputPart1) == 150L)
     check(part2(testInputPart2) == 900L)
 
-    val input = readInput("Day02/Day02")
+    val input = readInput("day02/Day02")
     println(part1(input))
     println(part2(input))
 }

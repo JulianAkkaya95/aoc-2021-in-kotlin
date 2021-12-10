@@ -1,4 +1,4 @@
-package Day07
+package day07
 
 import readInput
 import kotlin.streams.toList
@@ -32,7 +32,7 @@ fun main() {
     }
 
 
-    val inputTest = readInput("Day07/Day07_test")[0].split(",").stream().map { it.toInt() }.toList()
+    val inputTest = readInput("day07/Day07_test")[0].split(",").stream().map { it.toInt() }.toList()
     val maxPositionTest = inputTest.maxOrNull()!!
     val horizontalTest = Array(maxPositionTest + 1) { 0L }
     inputTest.forEach {
@@ -42,7 +42,7 @@ fun main() {
     check(part1(horizontalTest) == 37L)
     check(part2(horizontalTest) == 168L)
 
-    val input = readInput("Day07/Day07")[0].split(",").stream().map { it.toInt() }.toList()
+    val input = readInput("day07/Day07")[0].split(",").stream().map { it.toInt() }.toList()
     val maxPosition = input.maxOrNull()!!
     val horizontal = Array(maxPosition + 1) { 0L }
     input.forEach {

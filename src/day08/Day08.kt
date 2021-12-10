@@ -1,4 +1,4 @@
-package Day08
+package day08
 
 import readInput
 import kotlin.streams.toList
@@ -22,12 +22,12 @@ fun main() {
     }
 
 
-    val inputTest = readInput("Day08/Day08_test").stream().map { it.split(" | ").last() }.toList().joinToString(" ").split(" ")
+    val inputTest = readInput("day08/Day08_test").stream().map { it.split(" | ").last() }.toList().joinToString(" ").split(" ")
 
     check(part1(inputTest) == 26L)
     //check(part2(horizontalTest) == 168L)
 
-    val input = readInput("Day08/Day08").stream().map { it.split(" | ").last() }.toList().joinToString(" ").split(" ")
+    val input = readInput("day08/Day08").stream().map { it.split(" | ").last() }.toList().joinToString(" ").split(" ")
 
     println(part1(input))
     //println(part2(horizontal))

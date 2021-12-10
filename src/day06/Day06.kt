@@ -1,6 +1,6 @@
-package Day06
+package day06
 
-import Day06.Domain.LanternFish
+import day06.domain.LanternFish
 import readInput
 import kotlin.streams.toList
 
@@ -36,7 +36,7 @@ fun main() {
         return fishes.sum()
     }
 
-    val testInput = readInput("Day06/Day06_test")[0].split(",").stream().map { it.toInt() }.toList()
+    val testInput = readInput("day06/Day06_test")[0].split(",").stream().map { it.toInt() }.toList()
     val testInputPart1 = testInput.map { LanternFish(it) }.toList()
     val testInputPart2 = Array(9) { 0L }
     testInput.forEach {
@@ -46,7 +46,7 @@ fun main() {
     check(part1(testInputPart1.toMutableList(), 80) == 5934L)
     check(part2(testInputPart2, 256) == 26984457539)
 
-    val input = readInput("Day06/Day06")[0].split(",").stream().map { it.toInt() }.toList()
+    val input = readInput("day06/Day06")[0].split(",").stream().map { it.toInt() }.toList()
     val inputPart2 = Array(9) { 0L }
     val inputPart1 = input.map { LanternFish(it) }.toList().toMutableList()
     input.forEach {

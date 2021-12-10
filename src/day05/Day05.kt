@@ -1,4 +1,4 @@
-package Day05
+package day05
 
 import readInput
 
@@ -156,11 +156,11 @@ fun main() {
     }
 
 
-    val testInput = readInput("Day05/Day05_test")
+    val testInput = readInput("day05/Day05_test")
     //check(part1(testInput) == 5L)
     check(part2(testInput) == 12L)
 
 
-    val input = readInput("Day05/Day05")
+    val input = readInput("day05/Day05")
     println(part1(input))
 }
